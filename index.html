@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Roast Me 😈 / Compliments 💖</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trend Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
   <div class="container">
-    <h1>😈 Roast Me / 💖 Compliments</h1>
+    <h1>Trend Tracker</h1>
 
-    <input type="text" id="name" placeholder="Entre ton prénom..." />
-
-    <div class="buttons">
-      <button onclick="roast()">🔥 Roast me</button>
-      <button onclick="compliment()">💖 Compliment</button>
+    <div class="form">
+      <input id="title" placeholder="Titre de la tendance" />
+      <input id="category" placeholder="Catégorie (TikTok, SaaS...)" />
+      <input id="score" type="number" placeholder="Score viral (1-10)" />
+      <button id="addBtn">Ajouter</button>
     </div>
 
-    <div id="result">Clique un bouton 😏</div>
+    <input id="search" placeholder="Rechercher..." />
+
+    <div id="list"></div>
   </div>
 
-  <script src="script.js"></script>
+  <script type="module" src="./main.ts"></script>
+
 </body>
 </html>
